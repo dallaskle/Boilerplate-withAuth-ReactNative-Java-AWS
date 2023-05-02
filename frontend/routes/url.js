@@ -1,0 +1,1 @@
+export const BASE_URL = "enter_your_url_here";
