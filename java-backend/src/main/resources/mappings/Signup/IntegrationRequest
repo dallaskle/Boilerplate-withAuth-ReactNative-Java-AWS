@@ -1,0 +1,4 @@
+{
+    "email": $input.json('email'),
+    "password": $input.json('password')
+}

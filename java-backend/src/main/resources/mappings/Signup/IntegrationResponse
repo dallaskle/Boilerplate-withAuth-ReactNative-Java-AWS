@@ -1,0 +1,6 @@
+Lambda Error Regex: 400.*
+
+Mapping:
+{
+    errorMessage: "$input.params('errorMessage')"
+}
