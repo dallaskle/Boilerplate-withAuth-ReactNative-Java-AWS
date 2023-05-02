@@ -13,15 +13,20 @@ By using this boilerplate, you can quickly set up a secure and reliable mobile a
 
 Change name of the desired users table in the Users Model and the auth-users.yaml in the resources folder
 
+
 Create the table in the database by running this function:
+
 `aws cloudformation create-stack --stack-name my-auth-user-dynamodb-stack --template-body file://auth-users.yaml`
+
 (Note that you'll need to have the AWS Command Line Interface (CLI) installed and configured with your AWS credentials to use this command.)
+
 
 Create AWS Lambda functions for login and signup with the following specifications:
 - Java Corretto 11 Runtime
 - Access to DynamoDB
 - Handler pointing at com.boiler.activity.auth.Login(/Signup)Activity::handleRequest
 - Upload a build distribution
+
 
 Create API in AWS API Gateway
 - Add Resources
